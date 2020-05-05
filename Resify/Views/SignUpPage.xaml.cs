@@ -21,10 +21,11 @@ namespace Resify.Views
             {
                 _user.LastName = LastName_Entry.Text;
                 await Navigation.PopModalAsync();
+
             }
             catch
             {
-                await DisplayAlert("d","d","a");
+                await DisplayAlert("The Variable didint pass","Null Ref please send ss to support","ok:(");
             }
         }
     }
